@@ -20,10 +20,10 @@ public class Daemon
         }else
         {
             iconos = new Icons(4);
-            iconos[0] = new System.Drawing.Icon(@"icos\allred.ico");
-            iconos[1] = new System.Drawing.Icon(@"icos\Ngreen.ico");
-            iconos[2] = new System.Drawing.Icon(@"icos\allgreen.ico");
-            iconos[3] = new System.Drawing.Icon(@"icos\Cgreen.ico");
+            iconos[0] = new System.Drawing.Icon(@"..\..\icos\allred.ico");
+            iconos[1] = new System.Drawing.Icon(@"..\..\icos\Ngreen.ico");
+            iconos[2] = new System.Drawing.Icon(@"..\..\icos\allgreen.ico");
+            iconos[3] = new System.Drawing.Icon(@"..\..\icos\Cgreen.ico");
 
             Stream SaveFileStream = File.Create("Icons");
             BinaryFormatter serializer = new BinaryFormatter();
