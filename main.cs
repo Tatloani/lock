@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 using Lock.Properties;
 using System.Drawing;
@@ -41,8 +41,14 @@ namespace Lock
 
         private static void Run()
         {
+            /*
             while (true)
                 Notifyicon.Icon = icons[getStatus()];
+            */
+            inicio:
+            Notifyicon.Icon = icons[getStatus()];
+            Thread.Sleep(100);
+            goto inicio;
         }
 
         private static byte getStatus()
